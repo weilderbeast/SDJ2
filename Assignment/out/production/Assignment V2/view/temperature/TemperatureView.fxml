@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" styleClass="normal-background" stylesheets="@../style/style.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="view.temperature.TemperatureViewController">
+   <children>
+      <Label layoutX="409.0" layoutY="100.0" styleClass="grey-text" stylesheets="@../style/style.css" text="Radiator" />
+      <AnchorPane prefHeight="50.0" prefWidth="600.0" styleClass="top-background" stylesheets="@../style/style.css">
+         <children>
+            <Label layoutX="213.0" layoutY="11.0" text="Temperature View" textFill="#00ffeb">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <Button alignment="CENTER" layoutX="515.0" layoutY="313.0" mnemonicParsing="false" onAction="#openLogs" prefHeight="50.0" prefWidth="50.0" styleClass="round-button" text="back" />
+      <Label layoutX="109.0" layoutY="100.0" styleClass="grey-text" text="Thermometers" />
+      <VBox alignment="CENTER" layoutX="54.0" layoutY="159.0" prefHeight="200.0" prefWidth="212.0" spacing="40.0">
+         <children>
+            <HBox alignment="CENTER" prefHeight="30.0" prefWidth="184.0">
+               <children>
+                  <Label styleClass="grey-text" stylesheets="@../style/style.css" text="Thermometer 1:" />
+                  <Label fx:id="temp1" styleClass="grey-text" stylesheets="@../style/style.css" text="Label" />
+               </children>
+            </HBox>
+            <HBox alignment="CENTER" prefHeight="30.0" prefWidth="184.0">
+               <children>
+                  <Label styleClass="grey-text" stylesheets="@../style/style.css" text="Thermometer 2:" />
+                  <Label fx:id="temp2" styleClass="grey-text" stylesheets="@../style/style.css" text="Label" />
+               </children>
+            </HBox>
+            <HBox alignment="CENTER" prefHeight="30.0" prefWidth="184.0">
+               <children>
+                  <Label styleClass="grey-text" stylesheets="@../style/style.css" text="Outside temperature:" />
+                  <Label fx:id="temp3" styleClass="grey-text" stylesheets="@../style/style.css" text="Label" />
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+      <HBox layoutX="311.0" layoutY="212.0" prefHeight="82.0" prefWidth="212.0">
+         <children>
+            <VBox alignment="CENTER" prefHeight="77.0" prefWidth="76.0">
+               <children>
+                  <Label styleClass="grey-text" stylesheets="@../style/style.css" text="Power" />
+               </children>
+            </VBox>
+            <VBox alignment="CENTER" prefHeight="82.0" prefWidth="109.0">
+               <children>
+                  <Label fx:id="radiatorPower" styleClass="grey-text" stylesheets="@../style/style.css" text="Power" />
+               </children>
+            </VBox>
+            <VBox alignment="CENTER" prefHeight="82.0" prefWidth="26.0" spacing="20.0">
+               <children>
+                  <Button mnemonicParsing="false" onAction="#turnRadiatorUp" prefHeight="23.0" prefWidth="21.0" styleClass="arrow-up-button" />
+                  <Button mnemonicParsing="false" onAction="#turnRadiatorDown" prefHeight="23.0" prefWidth="21.0" styleClass="arrow-down-button" />
+               </children>
+            </VBox>
+         </children>
+      </HBox>
+      <VBox layoutX="374.0" layoutY="279.0" prefHeight="66.0" prefWidth="40.0" />
+      <Label fx:id="criticalLabel" layoutX="414.0" layoutY="313.0" text="Label" textFill="RED">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

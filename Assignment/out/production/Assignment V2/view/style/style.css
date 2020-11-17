@@ -1,0 +1,68 @@
+@font-face{
+  src: url('roboto.ttf');
+}
+
+.root{
+  -fx-font-family: "roboto";
+  -fx-font-size: 16px;
+}
+
+.top-background{
+  -fx-background-color: #4e5663;
+}
+.normal-background{
+  -fx-background-color: #323740;
+}
+.grey-text{
+  -fx-text-fill: #e0e0e0;
+}
+.round-button{
+  -fx-background-radius: 50%;
+  -fx-width: 40px;
+  -fx-height: 40px;
+
+  -fx-background-color: #2cdba1;
+  -fx-font-size:12px;
+}
+.arrow-up-button{
+  -fx-background-insets: 0 0 -1 0, 0;
+  -fx-padding: 0.25em;
+  -fx-shape: "M 0 -3.5 v 7 l 4 -3.5 z";
+  -fx-rotate: -90;
+}
+.arrow-down-button{
+  -fx-background-insets: 0 0 -1 0, 0;
+  -fx-padding: 0.25em;
+  -fx-shape: "M 0 -3.5 v 7 l 4 -3.5 z";
+  -fx-rotate: 90;
+}
+
+.main-label{
+
+}
+
+.chart{
+  -fx-background-color:  transparent;
+}
+.chart-plot-background {
+    -fx-background-color: transparent;
+}
+.chart-title {
+  -fx-text-fill: white;
+}
+
+.axis{
+  -fx-tick-label-fill: white;
+}
+
+.axis-label{
+  -fx-text-fill: white;
+}
+
+.chart-legend {
+   -fx-background-color:  transparent;
+}
+
+.chart-legend-item{
+    -fx-text-fill: white;
+}
